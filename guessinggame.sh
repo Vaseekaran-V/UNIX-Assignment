@@ -1,3 +1,8 @@
+function get_num_of_files{
+	total_files=(*)
+	total_files=$(#total_files[@]}
+	echo $total_files
+
 break = 0
 
 while [[ $break -eq 0 ]]
@@ -5,8 +10,7 @@ do
 	echo "Please enter the total files in the current directory: "
 	read answer
 	echo "User has input: $answer"
-	num_of_files=(*)
-	num_of_files=${#num_of_files[@]}
+	$num_of_files = $(get_num_of_files)
 	echo "Total num of files is: $num_of_files"
 
 	if [[ answer -eq num_of_files ]]
