@@ -6,7 +6,7 @@ do
 	read answer
 	echo "User has input: $answer"
 	num_of_files=(*)
-	num_of_files=${#numfiles[@]}
+	num_of_files=${#num_of_files[@]}
 	echo "Total num of files is: $num_of_files"
 
 	if [[ answer -eq num_of_files ]]
